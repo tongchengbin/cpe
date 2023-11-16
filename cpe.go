@@ -41,7 +41,7 @@ func ParseCPE23(cpeString string) (*CPE, error) {
 	// 创建并填充 CPE 结构体
 	cpe := &CPE{
 		Part:      matches[1],
-		Vendor:    "2.3",
+		Vendor:    matches[2],
 		Product:   matches[3],
 		Version:   matches[4],
 		Update:    matches[5],
